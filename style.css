@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4A6C8C;
+  color: #222222;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+a {
+  color: #1B5E9E;
+}
+
+#wrapper {
+  max-width: 780px;
+  margin: 20px auto;
+  border: 1px solid #26374A;
+  background: #F0F2F5;
+}
+
+/* ---------- Header ---------- */
+
+#header {
+  background: #26374A;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  border-bottom: 3px solid #1B5E9E;
+}
+
+#header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#header p {
+  margin: 0;
+  color: #C7D2DD;
+  font-size: 12px;
+}
+
+/* ---------- Content ---------- */
+
+#content {
+  padding: 16px 20px;
+}
+
+#stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  border: 1px solid #C6CCD3;
+}
+
+#stats-table td {
+  text-align: center;
+  padding: 10px 6px;
+  border-right: 1px solid #C6CCD3;
+  font-size: 11px;
+  color: #555555;
+}
+
+#stats-table td:last-child {
+  border-right: none;
+}
+
+#stats-table strong {
+  display: block;
+  font-size: 18px;
+  color: #1B5E9E;
+  margin-bottom: 2px;
+}
+
+#table-hint {
+  font-size: 11px;
+  color: #555555;
+  margin: 0 0 8px;
+}
+
+/* ---------- Song table ---------- */
+
+table#song-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #FFFFFF;
+  border: 1px solid #C6CCD3;
+}
+
+#song-table thead th {
+  text-align: left;
+  background: #DCE3EA;
+  color: #26374A;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 8px 10px;
+  border: 1px solid #C6CCD3;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#song-table thead th:hover {
+  background: #C9D5E0;
+}
+
+#song-table th.align-right,
+#song-table td.align-right {
+  text-align: right;
+}
+
+#song-table th .arrow {
+  margin-left: 4px;
+  font-size: 10px;
+  color: #1B5E9E;
+}
+
+#song-table tbody tr:nth-child(odd) {
+  background: #F5F7F9;
+}
+
+#song-table tbody tr:hover {
+  background: #E7EEF5;
+}
+
+#song-table td {
+  padding: 7px 10px;
+  border: 1px solid #E0E4E8;
+  font-size: 12px;
+}
+
+#song-table td.title-cell {
+  font-weight: bold;
+}
+
+#song-table td.artist-cell {
+  color: #555555;
+}
+
+#song-table td.date-cell {
+  color: #777777;
+}
+
+.rating-pill {
+  display: inline-block;
+  min-width: 18px;
+  padding: 1px 6px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+}
+
+.empty-state {
+  padding: 16px;
+  text-align: center;
+  color: #666666;
+  background: #FFFFFF;
+  border: 1px solid #C6CCD3;
+}
+
+/* ---------- Footer ---------- */
+
+#footer {
+  padding: 12px 20px;
+  border-top: 1px solid #C6CCD3;
+  font-size: 11px;
+  color: #555555;
+}
+
+#footer code {
+  background: #E7EAEE;
+  border: 1px solid #C6CCD3;
+  padding: 1px 4px;
+  font-family: "Courier New", monospace;
+}
+
+@media (max-width: 600px) {
+  #stats-table {
+    display: none;
+  }
+  #song-table {
+    font-size: 11px;
+  }
+}

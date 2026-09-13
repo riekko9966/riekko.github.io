@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Testing 123</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Song Log</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="WORK IN PROGRESS">
-    <h1>WORK IN PROGRESS</h1>
-    <p>WIP</p>
+
+  <div id="wrapper">
+
+    <div id="header">
+      <h1>Song Log</h1>
+      <p>A list of songs I've rated.</p>
+    </div>
+
+    <div id="content">
+
+      <table id="stats-table">
+        <tr>
+          <td><strong id="stat-total">-</strong><br>Songs</td>
+          <td><strong id="stat-average">-</strong><br>Average rating</td>
+          <td><strong id="stat-genres">-</strong><br>Genres</td>
+          <td><strong id="stat-countries">-</strong><br>Countries</td>
+        </tr>
+      </table>
+
+      <p id="table-hint">Click a column header to sort the list. Click it again to reverse the order.</p>
+
+      <table id="song-table">
+        <thead>
+          <tr>
+            <th data-key="title" data-type="string">Title</th>
+            <th data-key="artist" data-type="string">Artist</th>
+            <th data-key="rating" data-type="number" class="align-right">Rating</th>
+            <th data-key="genre" data-type="string">Genre</th>
+            <th data-key="country" data-type="string">Country</th>
+            <th data-key="dateAdded" data-type="date" class="align-right">Added</th>
+          </tr>
+        </thead>
+        <tbody id="song-table-body">
+          <!-- rows injected by script.js -->
+        </tbody>
+      </table>
+      <p id="empty-state" class="empty-state" hidden>No songs yet</p>
+      <p id="error-state" class="empty-state" hidden>Couldn't load songs.json</p>
+
+    </div>
+
+    <div id="footer">
+      <p>Ratings are whole numbers from 0 to 10</p>
+    </div>
+
   </div>
+
+<script src="script.js"></script>
 </body>
 </html>
